@@ -1,0 +1,36 @@
+body {
+    background-color: yellow;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #123456;
+}
+
+header > img {
+    width: 100px;
+}
+
+.ingredients-list {
+    list-style: square inside;
+}
+
+.directions {
+    list-style: decimal inside;
+}
+
+.user_review h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
