@@ -5,6 +5,7 @@ body {
 
 h1 {
     font-size: 38px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -18,6 +19,7 @@ ul li a, figcaption a {
 
 header > img {
     width: 100px;
+    float: left;
 }
 
 .ingredients-list {
@@ -38,7 +40,7 @@ input[type="radio"] {
     -webkit-appearance: none;
     width: 27px;
     height: 27px;
-    background-image: url(./stars.png);
+    background-image: url(stars.png);
     vertical-align: bottom;;
 }
 
@@ -65,4 +67,48 @@ ol li:nth-of-type(2n) {
 
 h2 + .user_review {
     border-top: 1px solid black;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 20px;
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    width: 60%;
+}
+
+aside {
+    display: inline-block;
+}
+
+.ingredients-list li {
+    margin: 15px 0px;
+}
+
+input[type="text"], select {
+    display: block;
+    width: 175px;
+}
+
+select {
+    margin: 10px 0;
+    width: 180px;
+}
+
+textarea {
+    width: 350px;
+}
+
+label {
+    display: block;
 }

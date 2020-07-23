@@ -15,6 +15,15 @@ ol, ul {
     list-style: none;
 }
 
+input[type="radio"], select, input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+}
+
+h2 + .user_review {
+    border-top: 1px solid black;
+}
+
 img {
-    width: 100%
+    width: 100%;
 }
