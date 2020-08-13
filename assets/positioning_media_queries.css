@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: lightseagreen;
+    margin: 0 auto;
+    width: 60%;
 }
 
 h1 {
@@ -24,6 +26,7 @@ header {
 
 header > img {
     width: 100px;
+    float: left;
 }
 
 .ingredients-list {
@@ -45,7 +48,7 @@ input[type="radio"] {
     width: 27px;
     height: 27px;
     background-image: url(stars.png);
-    vertical-align: bottom;;
+    vertical-align: bottom;
 }
 
 input[type="radio"]:checked {
@@ -73,12 +76,17 @@ h2 + .user_review {
     border-top: 1px solid black;
 }
 
+nav {
+    float: right;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
 }
 
 nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
@@ -116,3 +124,45 @@ textarea {
 label {
     display: block;
 }
+
+.hamburger-dropdown {
+    display: none;
+}
+
+@media all and (max-width: 900px) {
+    .col {
+        min-width: 550px;
+    }
+    nav ul {
+        display: none;
+    }
+    .hamburger-dropdown {
+        display: block;
+    }
+    .hamburger-dropdown > li {
+        background: url(./hamburger.png);
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+    .hamburger-dropdown ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        flex-direction: column;
+        cursor: pointer;
+        box-shadow: black 5px 5px 10px;
+    }
+
+    .hamburger-dropdown:hover ul {
+        display: flex;
+        background: ghostwhite;
+    }
+
+    .hamburger-dropdown ul li:hover a {
+        text-decoration: underline;
+    }
+};
